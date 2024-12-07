@@ -1,0 +1,141 @@
+body, html { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #BDEFEF; /* Light background color */
+    color: #333; /* Text color */
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Align navbar to the right */
+    background-color: #3A8C8D; /* Updated navbar color */
+    padding: 10px 20px;
+    position: sticky; /* Stick to top when scrolling */
+    top: 0;
+    z-index: 1000;
+    border-radius: 10px; /* Rounded corners for the navbar */
+    margin: 10px; /* Add some spacing around the navbar */
+    border: 2px solid black; /* Thinner black border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Navbar links */
+.navbar a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 15px; /* Rounded corners for the links */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effects */
+.navbar a:hover {
+    background-color: #3A8C8D; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active link styling (optional) */
+.navbar a.active {
+    background-color: #04AA6D; /* Highlight active link */
+}
+
+/* Add margin-top to create space for the navbar */
+.registration-form {
+    margin-top: 100px; /* Adjust this value based on navbar height */
+    text-align: center; /* Center the form content */
+}
+
+/* Form container styling */
+.form-container {
+    background-color: white;
+    border-radius: 15px; /* Rounded corners for the box */
+    padding: 20px; /* Reduced padding to further reduce the form height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 500px; /* Increased width */
+    margin: 0 auto; /* Center the form horizontally */
+    border: 3px solid #3A8C8D; /* Border with navbar color */
+}
+
+/* Styling for form labels and inputs */
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+/* Input and select fields styling */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #ccc; /* Border for each input field */
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for inputs */
+}
+
+/* Button styling */
+.button-container input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #ccc; /* Border for buttons */
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for buttons */
+}
+
+/* Styling for the 'Register' button */
+.button-container input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border-color: #4CAF50; /* Green border */
+}
+
+/* Styling for the 'Clear' button */
+.button-container input[type="reset"] {
+    background-color: #f44336; /* Red background */
+    color: white;
+    border-color: #f44336; /* Red border */
+}
+
+/* Hover effects for buttons */
+.button-container input:hover {
+    opacity: 0.8;
+}
+
+/* Optional styling for radio buttons */
+.form-container input[type="radio"] {
+    width: auto;
+    margin: 5px;
+    display: inline-block; /* Align radio buttons horizontally */
+    border: 2px solid #ccc; /* Border for radio buttons */
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for radio buttons */
+}
+
+/* Align Male, Female, Other side by side */
+.gender-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.gender-options label {
+    margin-right: 15px; /* Space between radio buttons */
+}
+
+/* Optional styling for underlined heading */
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
